@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Placeholder with API</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(92deg, #b60b0b, #01015d);
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-container {
+        display: flex;
+    }
+
+    .left-container {
+        width: 30%;
+        /* background: mediumseagreen; */
+    }
+
+    .btn {
+        width: 80%;
+        background-color: white;
+        padding: 2px 10px;
+        border-radius: 40px;
+        font-size: 20px;
+        border: none;
+        margin: 10px auto;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    h3 {
+        padding: 2px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .btn.selected {
+        border: 4px #ff6200 solid;
+    }
+
+    .right-container {
+        width: 70%;
+        background: ghostwhite;
+    }
+
+    .content {
+        width: 85%;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+
+    <div class="main-container">
+        <div class="left-container" id="left-container">
+
+            <div id="btn" class="btn selected">
+                <h3 class="name" id="name">name</h3>
+                <h3 class="email" id="email">email</h3>
+            </div>
+
+            <!-- <div id="btn" class="btn selected">hello</div> -->
+        </div>
+        <div class="right-container" id="right-container">
+
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deleniti tempore atque
+                non iure asperiores saepe aut a impedit obcaecati modi, veniam veritatis. Quia tenetur atque laborum
+                sunt doloribus ut?
+            </div>
+
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deleniti tempore atque
+                non iure asperiores saepe aut a impedit obcaecati modi, veniam veritatis. Quia tenetur atque laborum
+                sunt doloribus ut?
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
